@@ -21,6 +21,8 @@ public class Main {
         int largo = text.length();
         String texto = text.replace("Adios", "Chao");
         System.out.println(texto);
+        String direccion = "Hola \"mundo\"";//excepcion de characters
+        System.out.println(direccion);
 
 
 
