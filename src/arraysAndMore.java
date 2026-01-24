@@ -10,5 +10,15 @@ public class arraysAndMore {
         System.out.println(numeros.length);
         Arrays.sort(numeros);
         System.out.println(Arrays.toString(numeros));
+
+        //Multiples dimensiones
+        int[][] matriz = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        matriz[0][0] = 5;
+        System.out.println(Arrays.deepToString(matriz));
+
     }
 }
