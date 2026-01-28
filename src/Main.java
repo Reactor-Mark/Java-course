@@ -24,6 +24,9 @@ public class Main {
         String direccion = "Hola \"mundo\"";//excepcion de characters
         System.out.println(direccion);
 
+        //Constantes
+        final String empresa = "Mi empresa";
+        System.out.println(empresa);
 
 
     }
