@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //Hola mundo
@@ -28,6 +30,10 @@ public class Main {
         final String empresa = "Mi empresa";
         System.out.println(empresa);
 
-
+        //clase scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa un valor: ");
+        String valor = scanner.nextLine();
+        System.out.println("Esto escribiste: " + valor);
     }
 }
