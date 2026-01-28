@@ -1,4 +1,5 @@
-import java.sql.SQLOutput;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class math {
     public static void main(String[] args){
@@ -44,6 +45,7 @@ public class math {
         //System.out.println(l);
 
         //Class math
+        /*
         System.out.println(Math.abs(-10));
         System.out.println(Math.ceil(1.01));// The next integer greater than or equal to the argument
         System.out.println(Math.floor(1.99));// The largest integer less than or equal to the argument
@@ -53,6 +55,17 @@ public class math {
         System.out.println(Math.sqrt(16)); //square root
         System.out.println(Math.round(15.5)); //round to nearest integer
         System.out.println((int)(Math.random() * 100)); //random number between 0.0 and 1.0
+        */
+
+        //Formatting numbers
+        Locale locale = Locale.forLanguageTag("es-MX");
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance(locale);
+        String result = numberFormat.format(1099.90);
+        System.out.println(result);
+
+        NumberFormat porcentaje = NumberFormat.getPercentInstance();
+        System.out.println(porcentaje.format(0.1) );
+
 
     }
 }
