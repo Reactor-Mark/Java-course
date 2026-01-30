@@ -8,7 +8,7 @@ public class Operadores {
 
         if (isRestricted && edad < 18) {
             System.out.println("No puedes ver la pelicula");
-        } else {
+        } else if (!isRestricted || edad >= 18) {
             System.out.println("Puedes ver la pelicula");
         }
 
