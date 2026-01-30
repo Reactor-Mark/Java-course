@@ -3,7 +3,6 @@ public class Operadores {
         //condicionales
         int edad = 18;
         String movieClass = "R18";
-
         boolean isRestricted = movieClass.contains("R");
 
         if (isRestricted && edad < 18) {
@@ -11,6 +10,8 @@ public class Operadores {
         } else if (!isRestricted || edad >= 18) {
             System.out.println("Puedes ver la pelicula");
         }
+
+        //Operador ternario
 
     }
 }
