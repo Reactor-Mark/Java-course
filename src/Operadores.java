@@ -12,8 +12,26 @@ public class Operadores {
         }
 
         //Operador ternario
-        int edad 17;
-        String resultado = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+        int edad2 = 17;
+        String resultado = (edad2 >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
         System.out.println(resultado);
+
+        //switch case
+        String action = "agregar";
+        switch (action) {
+            case "agregar":
+                System.out.println("Elemento agregado");
+                break;
+            case "eliminar":
+                System.out.println("Elemento eliminado");
+                break;
+            case "actualizar":
+                System.out.println("Elemento actualizado");
+                break;
+            default:
+                System.out.println("Accion no reconocida");
+                break;
+        }
+
     }
 }
